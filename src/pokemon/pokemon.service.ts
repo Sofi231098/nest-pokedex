@@ -41,6 +41,7 @@ export class PokemonService {
 
     //Mongo id
     if(!pokemon && isValidObjectId(term)){
+      
       pokemon = await this.pokemonModel.findById(term);
     }
 
